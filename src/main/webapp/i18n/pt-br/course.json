@@ -1,0 +1,27 @@
+{
+  "apoiaBackOfficeApp": {
+    "course": {
+      "home": {
+        "title": "Courses",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Course",
+        "createOrEditLabel": "Criar ou editar Course",
+        "notFound": "Nenhum Course encontrado"
+      },
+      "created": "Um novo Course foi criado com o identificador {{ param }}",
+      "updated": "Um Course foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Course foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Course {{ id }}?"
+      },
+      "detail": {
+        "title": "Course"
+      },
+      "id": "Id",
+      "title": "Title",
+      "description": "Description",
+      "seoPublished": "Seo Published",
+      "area": "Area"
+    }
+  }
+}

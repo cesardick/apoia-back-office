@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20241013183420"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Mentor",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "area",
+      "otherEntityRelationshipName": "mentors",
+      "relationshipName": "areas",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
