@@ -1,0 +1,30 @@
+entity Mentor {
+	id UUID,
+	name String
+}
+
+entity Area {
+	id UUID
+	name String
+}
+
+entity Course {
+	id String
+	title String
+    description String
+    seoPublished Boolean
+}
+
+relationship ManyToMany {
+	Area{mentors} to Mentor{areas}
+}
+
+relationship ManyToOne {
+	Course{area} to Area
+}
+
+// Set pagination options
+paginate Mentor with infinite-scroll
+paginate Course, Area, Mentor with pagination
+
+dto * with mapstruct

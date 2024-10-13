@@ -1,0 +1,25 @@
+{
+  "apoiaBackOfficeApp": {
+    "mentor": {
+      "home": {
+        "title": "Mentors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Mentor",
+        "createOrEditLabel": "Create or edit a Mentor",
+        "notFound": "No Mentors found"
+      },
+      "created": "A new Mentor is created with identifier {{ param }}",
+      "updated": "A Mentor is updated with identifier {{ param }}",
+      "deleted": "A Mentor is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mentor {{ id }}?"
+      },
+      "detail": {
+        "title": "Mentor"
+      },
+      "id": "Id",
+      "name": "Name",
+      "areas": "Areas"
+    }
+  }
+}

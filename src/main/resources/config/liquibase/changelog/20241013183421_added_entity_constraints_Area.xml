@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Area.
+    -->
+    <changeSet id="20241013183421-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="area_id"
+                                 baseTableName="rel_area__mentors"
+                                 constraintName="fk_rel_area__mentors__area_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="area"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="mentors_id"
+                                 baseTableName="rel_area__mentors"
+                                 constraintName="fk_rel_area__mentors__mentors_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="mentor"
+                                 />
+    </changeSet>
+</databaseChangeLog>
